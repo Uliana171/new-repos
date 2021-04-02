@@ -1,4 +1,126 @@
-body {
-  background: black;
-  color: wheat;
+.logo {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
+
+  height: 45px;
+  width: 128px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.15) translateX(10px);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo__icon {
+  background-color: rgba(255, 107, 9, 1);
+  align-self: center;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.logo__text {
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.logo__part-text {
+  color: rgba(255, 107, 9, 1);
+}
+
+.menu-container {
+  width: 280px;
+  height: 568px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(17, 21, 24, 0.9);
+  background-image: linear-gradient(
+    to right,
+    rgba(17, 21, 24, 0.9),
+    rgba(17, 21, 24, 0.9)
+  );
+}
+.mobile-header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.mobile-list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mobile-list__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.mobile-list__link:hover,
+.mobile-list__link:focus {
+  color: rgba(255, 107, 9, 1);
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.call {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: rgba(255, 107, 9, 1);
+  border: 2px solid rgba(255, 107, 9, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 44px;
+}
+
+.menu-container > .call {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-list__link {
+    font-size: 26px;
+  }
+
+  .mobile-list {
+    margin-top: 72px;
+    margin-left: 218px;
+  }
+
+  .menu-container {
+    width: 728px;
+    height: 1024px;
+  }
+
+  .menu-container > .call {
+    display: none;
+  }
 }
