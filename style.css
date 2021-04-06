@@ -124,3 +124,27 @@ a {
     display: none;
   }
 }
+
+/* фіксований хедер */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid var(--white-back-color);
+
+  &__container {
+    min-height: 79px;
+
+    @media (max-width: $max-tablet-bp) {
+      position: relative;
+      min-height: 59px;
+    }
+
+    @media (min-width: $min-tablet-bp) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+/* фіксований хедер */
